@@ -16,3 +16,22 @@ input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0 112 243);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(29, 131, 248);
+}
