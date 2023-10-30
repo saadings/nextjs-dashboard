@@ -12,7 +12,7 @@ import { fetchRevenue } from "@/app/lib/data";
 
 export default async function RevenueChart({}: {}) {
   const revenue = await fetchRevenue();
-  
+
   const chartHeight = 350;
   // NOTE: comment in this code when you get to this point in the course
 
@@ -43,12 +43,12 @@ export default async function RevenueChart({}: {}) {
           {revenue.map((month) => (
             <div key={month.month} className="flex flex-col items-center gap-2">
               <div
-                className="w-full rounded-md bg-blue-300"
+                className="w-full rounded-md bg-blue-400"
                 style={{
                   height: `${(chartHeight / topLabel) * month.revenue}px`,
                 }}
               ></div>
-              <p className="-rotate-90 text-sm text-gray-400 sm:rotate-0">
+              <p className="-rotate-90 text-sm text-gray-700 sm:rotate-0">
                 {month.month}
               </p>
             </div>
